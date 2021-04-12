@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  background-color: #f3f3bc;
+  border: 10px solid black;
+}
+
+footer {
+  text-align: center;
+}
+
+/*#region nav-bar*/
+.nav-bar {
+  padding-top: 60px;
+  padding-right: 40px;
+  font-size: 100%;
+  font-weight: bold;
+  font-family: "Noto Sans", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.nav-bar a {
+  color: #3d3d3d;
+}
+
+.nav-bar a:link {
+  padding: 0px 10px;
+  text-decoration: none;
+}
+
+.nav-bar a:hover {
+  color: black;
+}
+
+/*#endregion nav-bar*/
+/*#region welcome-page*/
+#welcome-page {
+  width: 70%;
+  height: 400px;
+  margin: 120px auto;
+}
+
+#welcome-page img {
+  display: block;
+  margin: 20px auto;
+  width: 150px;
+  height: auto;
+}
+
+#welcome-page h1 {
+  margin: 5px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+#welcome-page h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+}
+
+/*#endregion welcome-page*/
+#about-me-section {
+  background-color: #cecece;
+  border: 1px solid black;
+}
+
+#about-me-section h1 {
+  margin: 80px auto;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.about-me-container {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70%;
+  margin: 20px auto;
+}
+
+@media only screen and (max-width: 769) {
+  .about-me-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.about-me-container img {
+  width: 200px;
+  height: 260px;
+  border: 10px solid white;
+  margin: 20px;
+  -webkit-box-shadow: 3px 3px black;
+          box-shadow: 3px 3px black;
+}
+
+#profile-bg {
+  width: 320px;
+  height: 350px;
+}
+
+#skills {
+  width: 70%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skill {
+  padding: 1%;
+}
+
+.skill img {
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+}
+
+.skill h4 {
+  text-align: center;
+  font-style: italic;
+}
+
+#projects {
+  background-color: gray;
+  min-height: 1020px;
+}
+
+#projects h2 {
+  margin: 20px;
+  text-align: center;
+}
+
+#projects a {
+  position: relative;
+  bottom: 10px;
+  padding: 33%;
+}
+
+.project {
+  background-color: white;
+  margin: 10px;
+  min-height: 250px;
+}
+
+.project img {
+  width: 100%;
+}
+
+/*#region For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+  #about-me-section {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+/*#endregion For mobile phones: */
+/*#region For tablets: */
+@media only screen and (min-width: 769) {
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+/*#endregion For tablets: */
+/*# sourceMappingURL=style.css.map */
