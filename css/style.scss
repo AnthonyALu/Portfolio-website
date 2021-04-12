@@ -23,9 +23,6 @@ html {
 	border: 10px solid black; //Creates a black border around the screen so that it looks neat
 }
 
-footer {
-	text-align: center;
-}
 
 /*#region nav-bar*/
 .nav-bar {
@@ -80,6 +77,7 @@ footer {
 
 /*#endregion welcome-page*/
 
+/*#region about-me*/
 #about-me-section{
 	background-color: rgb(206, 206, 206);
 	border: 1px solid black;
@@ -109,7 +107,9 @@ footer {
 	box-shadow: 3px 3px black;
 }
 
+/*#endregion nav-bar*/
 
+/*#region skills-section*/
 #skills-section {
 	width: 70%;
 	margin: auto;
@@ -143,28 +143,43 @@ footer {
 		font-style: italic;
 	}
 }
-#projects {
-	background-color: gray;
-	min-height: 1020px;
-	h2 {
-		margin: 20px;
-		text-align: center;
+
+/*#endregion skills-section*/
+
+/*#region footer*/
+.socials-container{
+	padding: 30px 0px 0px 0px;
+	a{
+		margin: 8px;
+		img{
+		filter:grayscale(1) invert(0.7);
+		-webkit-filter: grayscale(1) invert(0.7);
+		width: 28px;
+		height: 28px;
+		}
 	}
-	a {
-		position: relative;
-		bottom: 10px;
-		padding: 33%;
+	p{
+		display:inline;
 	}
-}
-.project {
-	background-color: white;
-	margin: 10px;
-	min-height: 250px;
-	img {
-		width: 100%;
+
+	a:hover{
+		img{
+		filter:grayscale(1) invert(1);
+		-webkit-filter: grayscale(1) invert(1);
+		}
 	}
 }
 
+footer {
+	width: 100%;
+	background-color: black;
+	margin: 30px 0px 0px 0px;
+	text-align: center;
+	font-family: $raleway;
+	color:white;
+	font-size: 14px;
+}
+/*#endregion footer*/
 
 /*#region For mobile phones: */
 [class*="col-"] {
