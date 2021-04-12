@@ -204,6 +204,67 @@ footer {
 }
 
 /*#endregion footer*/
+#projects-section {
+  background-color: #cecece;
+  border: 1px solid black;
+}
+
+#projects-section h1 {
+  margin: 80px auto;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#projects-section h1 {
+  margin: 60px 20%;
+  text-align: left;
+  font-weight: 600;
+}
+
+#project-banner {
+  border: 5px solid white;
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 3px 3px black;
+          box-shadow: 3px 3px black;
+}
+
+.projects-container {
+  width: 60%;
+  margin: 20px auto;
+}
+
+.projects-container p {
+  margin: 10px 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.project-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px auto;
+}
+
+.project-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.project-skills img {
+  width: 50px;
+  height: 50px;
+}
+
 /*#region For mobile phones: */
 [class*="col-"] {
   width: 100%;
