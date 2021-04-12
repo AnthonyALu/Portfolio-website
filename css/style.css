@@ -89,26 +89,20 @@ footer {
 }
 
 .about-me-container {
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 70%;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   margin: 20px auto;
 }
 
-@media only screen and (max-width: 769) {
-  .about-me-container {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-.about-me-container img {
+#profile-pic {
   width: 200px;
   height: 260px;
   border: 10px solid white;
@@ -117,9 +111,12 @@ footer {
           box-shadow: 3px 3px black;
 }
 
-#profile-bg {
-  width: 320px;
-  height: 350px;
+#about-me-pic {
+  border-radius: 10px;
+  height: auto;
+  margin: 20px 40px 40px 40px;
+  -webkit-box-shadow: 3px 3px black;
+          box-shadow: 3px 3px black;
 }
 
 #skills {
@@ -178,6 +175,10 @@ footer {
   width: 100%;
 }
 
+[class*="col-"] #about-me-pic {
+  width: 80%;
+}
+
 @media only screen and (min-width: 600px) {
   .col-s-1 {
     width: 8.33%;
@@ -215,15 +216,11 @@ footer {
   .col-s-12 {
     width: 100%;
   }
-  #about-me-section {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
 }
 
 /*#endregion For mobile phones: */
 /*#region For tablets: */
-@media only screen and (min-width: 769) {
+@media only screen and (min-width: 769px) {
   .col-1 {
     width: 8.33%;
   }
