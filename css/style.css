@@ -204,6 +204,81 @@ footer {
 }
 
 /*#endregion footer*/
+/*#region work-page*/
+#work-page {
+  width: 70%;
+  height: 400px;
+  margin: 120px auto;
+}
+
+#work-page img {
+  display: block;
+  margin: 20px auto;
+  width: 150px;
+  height: auto;
+}
+
+#work-page h1 {
+  margin: 5px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+}
+
+#work-page h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  text-align: center;
+}
+
+/*#endregion work-page*/
+#work-background {
+  width: 40%;
+  height: 500px;
+  z-index: -1;
+  position: absolute;
+}
+
+#work-background #cog1 {
+  position: relative;
+  width: 50%;
+  -webkit-animation: rotation 4s infinite linear;
+          animation: rotation 4s infinite linear;
+  animation-direction: reverse;
+}
+
+#work-background #cog2 {
+  width: 30%;
+  position: relative;
+  left: -4%;
+  -webkit-animation: rotation 2s infinite linear;
+          animation: rotation 2s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
 #projects-section {
   background-color: #cecece;
   border: 1px solid black;
