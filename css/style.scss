@@ -292,15 +292,52 @@ footer {
 }
 
 #project-banner{
+	display: block;
 	border: 5px solid rgb(255, 255, 255);
 	width: 100%;
 	height: auto;
 	box-shadow: 3px 3px black;
 }
 
+.overlay-text{
+	position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000bd;
+	p{
+		font-family: $raleway;
+		color: white;
+		font-size: 12px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 80%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%); //CENTER TEXT
+		text-align: center;
+		&:hover{
+			color: rgba(255, 255, 255, 0.445);
+		}
+	}
+}
+
+
 .projects-container{
+	position: relative;
 	width: 60%;
 	margin: 20px auto;
+	&:hover{
+	.overlay-text{
+		opacity: 1;
+	}
+	}	
 	p{
 		margin: 10px 0;
 		font-family: $raleway;
@@ -308,6 +345,7 @@ footer {
 }
 
 .project-details{
+	width: 60%;
 	display: flex;
 	justify-content: space-between;
 	margin: 10px auto;
@@ -316,10 +354,12 @@ footer {
 	display:flex;
 	justify-content: flex-end;
 	img{
-		width: 50px;
-		height: 50px;
+		width: 30px;
+		height: 30px;
 	}
 }
+
+
 
 /*#region For mobile phones: */
 [class*="col-"] {
@@ -366,6 +406,19 @@ footer {
 		width: 100%;
 	}
 
+	.project-skills{
+		img{
+			width: 40px;
+			height: 40px;
+		}
+	}
+
+	.overlay-text{
+		p{
+			font-size: 16px;
+		}
+	}
+
 }
 /*#endregion For mobile phones: */
 /*#region For tablets: */
@@ -407,5 +460,17 @@ footer {
 		width: 100%;
 	}
 
+	.project-skills{
+		img{
+			width: 50px;
+			height: 50px;
+		}
+	}
+
+	.overlay-text{
+		p{
+			font-size: 20px;
+		}
+	}
 }
 /*#endregion For tablets: */
