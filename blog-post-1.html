@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/style.scss">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Anthony's Blog</title>
 </head>
 <body>
@@ -20,60 +20,48 @@
             </div>
         </a> 
     </header>
-        <section id="blog">
-            <div id="blog-page">
-                <img src="img/blog.png" alt="PROGRAMMER">
-                <h1>Blog</h1>
-                <h2>Thoughts on why my code doesn't work</h2>
-            </div>
-        </section>
 
-        <section class="blog-section">
-            <h1>Latest Posts:</h1>
-            <div class="blog-snippet-container">
-                <h5>April 16, 2021</h5>
+        <section class="blog-post-section">
+            <div class="blog-content">
+                <h1>Where the rubber hits the road:</h1>
                 <br>
-                <h2>Hello</h2>
-                <br>
-                <p>Hello</p>
-                <br>
-                <a href="blog.html"><h4>Read More <span id="right-arrow">&RightArrow;</span></h4></a>
-            </div>
-            <div class="blog-snippet-container">
-                <h5>April 15, 2021</h5>
-                <br>
-                <h2>Hello</h2>
-                <br>
-                <p>Hello</p>
-                <br>
-                <a href="blog.html"><h4>Read More <span id="right-arrow">&RightArrow;</span></h4></a>
-            </div>
-            <div class="blog-snippet-container">
-                <h5>April 14, 2021</h5>
-                <br>
-                <h2>Hello</h2>
-                <br>
-                <p>Hello</p>
-                <br>
-                <a href="blog.html"><h4>Read More <span id="right-arrow">&RightArrow;</span></h4></a>
-            </div>
-            <div class="blog-snippet-container">
-                <h5>April 13, 2021</h5>
-                <br>
-                <h2>Hello</h2>
-                <br>
-                <p>Hello</p>
-                <br>
-                <a href="blog.html"><h4>Read More <span id="right-arrow">&RightArrow;</span></h4></a>
-            </div>
-            <div class="blog-snippet-container">
                 <h5>April 12, 2021</h5>
                 <br>
-                <h2>Where the rubber hits the road</h2>
+                <h3>Nothing quite like spending hours on something only to find out it doesn't work.</h3>
+                <br><br>
+                <p> 
+                    While searching for some inspiration to design my home page, I came across a typing animation on my friend's website that caught my attention. 
+                    Of course, I asked him how he did it but to my despair he told me that he did it in Javascript, which I know nothing of. 
+                    Nevertheless, I was determined to create it and so I tried to find a way to recreate it using only CSS.
+                    Unfortunately, expectations did not quite meet reality.
+                </p>
                 <br>
-                <p>Nothing quite like spending hours on something only to find out it doesn't work.</p>
+                <img src="img/website-gif.gif" alt="WEBSITE-ANIMATION"/>
+                <br><br>
+                <h3>First Attempt:</h3>
+                <p>
+                    I created a container to hold the text and I figured that one way I could change the content of my title is by using the content function in CSS.
+                    It looked like it worked perfectly, changing the text by using keyframes.
+                    My only concern was that changing the keyframes would be quite time consuming in the future but I was quite pleased with the results.
+                    However, as I tried to add the responsive design constraints, I found that I wasn't able to resize the text.
+                    Due to my limited knowledge I wasn't able to come up with a solution to this issue, but I wasn't ready to give up yet. 
+                </p>
                 <br>
-                <a href="blog-pages/blog-1.html"><h4>Read More <span id="right-arrow">&RightArrow;</span></h4></a>
+                <h3>Second Attempt:</h3>
+                <p>I decided that I would give it one last shot. 
+                    This time I thought to try and switch between texts by preparing the text and adjusting the size of them to make them 'invisible' in my keyframes.
+                    It did seem a bit ambitious and seemed to involved a lot of work, but clearly I was obsessed with this animation.
+                    After much toil, I tested my code and once again to my disappointment, it was almost perfect. 
+                    Though most of the time it worked fine, sometimes it would lag and you would be able to see flashes of the text that did not get hidden in time.
+                </p>
+                <br>
+                <img src="img/finished-animation.gif" alt="FINISHED-ANIMATION"/>
+                <br><br>
+                <p>Nice try, but I think I will learn Javascript before I attempt this one again...</p>
+            </div>
+            <div class="blog-nav-buttons">
+                <p></p> <!-- Placeholder for div  -->
+                <a href="blog-post-2.html"><h4>Next Post <span id="right-arrow">&RightArrow;</span><span id="right-arrow-placeholder">&rightarrow;</span></h4></a>
             </div>
         </section>
 
