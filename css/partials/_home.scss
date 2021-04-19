@@ -1,5 +1,7 @@
+@import "./mixins";
+
 /*#region welcome-page*/
-#welcome-page {
+.welcome-page {
 	width: 70%;
 	height: 400px;
 	margin: 120px auto;
@@ -13,12 +15,12 @@
 		margin: 5px;
 		text-align: center;
 		font-family: $raleway;
-		font-size: 40px;
+		font-size: 30px;
 		font-weight: 300;
 	}
 	h2{
 		font-family: $raleway;
-		font-size: 20px;
+		font-size: 16px;
 		font-weight: 100;
 		text-align: center
 	}
@@ -32,7 +34,6 @@
 	background-color: rgb(206, 206, 206);
 	border: 1px solid black;
 	@include title-font();
-	
 }
 .about-me-container{
 	flex-wrap: wrap;
@@ -40,6 +41,26 @@
 	justify-content: center;
 	align-content: flex-start;
 	margin: 20px auto;
+}
+
+#about-me-content{
+	background-image: url("../../img/chat-window.png");
+	width: 70%;
+	height: 200px;
+	margin: 20px auto;
+	border-radius: 10px;
+	padding:30px;
+	h2{
+		font-family: $noto-sans;
+		font-size: 16px;	
+	}
+	p{
+		font-size: 12px;
+	}
+	li{
+		line-height: 1.6;
+		font-size: 12px;
+	}
 }
 
 #profile-pic{
@@ -95,4 +116,93 @@
 	}
 }
 
+.resume-container{
+	display:flex;
+	justify-content: center;
+	align-items: center; //centers text vertically
+	background-color: white;
+	border: 3px solid black;
+	box-shadow: 5px 5px black;
+	border-radius: 10px;
+	margin: auto;
+	width: 30%;
+	height: 80px;
+	a{
+		text-decoration: none;
+		&:hover{
+			#down-arrow{
+				transform: translate(0,6px);
+				-webkit-transform: translate(0,6px); /** Chrome & Safari **/
+				-o-transform: translate(0,6px); /** Opera **/
+				-moz-transform: translate(0,6px); /** Firefox **/
+				}
+		}
+	}
+	p{
+		width: 80%;
+		font-size: 10px;
+		font-family: $raleway;
+		text-align: center;
+		color:black;
+	}
+}
+
+#down-arrow{
+	position: absolute;
+	transition: 0.5s ease-in-out;
+	-webkit-transition: 0.5s ease-in-out; /** Chrome & Safari **/
+	-moz-transition: 0.5s ease-in-out; /** Firefox **/
+	-o-transition: 0.5s ease-in-out; /** Opera **/
+}
 /*#endregion skills-section*/
+
+@media only screen and (min-width: 500px) {
+	#about-me-content{
+		h2{
+			font-family: $noto-sans;
+			font-size: 24px;	
+		}
+		p{
+			font-size: 14px;
+		}
+		li{
+			font-size: 14px;
+		}
+	}
+}
+@media only screen and (min-width: 600px) {
+	.resume-container{
+		p{
+			font-size: 16px;
+		}
+	}
+
+	.welcome-page{
+		h2{
+			font-size:20px;
+		}
+	}
+}
+
+@media only screen and (min-width: 769px) {
+	.resume-container{
+		p{
+			font-size: 18px;
+		}
+	}
+
+	.welcome-page{
+		h1{
+			font-size:40px;
+		}
+	}
+
+	#about-me-content{
+		p{
+			font-size: 16px;
+		}
+		li{
+			font-size: 16px;
+		}
+	}
+}
