@@ -65,6 +65,49 @@ header{
 }
 /*#endregion nav-bar*/
 
+.page-nav-buttons{
+    display:flex; 
+    width: 80%;
+    margin: 40px auto;
+    justify-content: space-between; //separate the nav buttons
+    a{
+        text-decoration: none;
+        color:black;
+        font-size: 12px;
+        &:hover{
+            #right-arrow{
+				transform: translate(6px,0); //move arrow right
+				-webkit-transform: translate(6px,0); /** Chrome & Safari **/
+				-o-transform: translate(6px,0); /** Opera **/
+				-moz-transform: translate(6px,0); /** Firefox **/
+            }
+
+            #left-arrow{
+                transform: translate(-6px,0); //move arrow left
+                -webkit-transform: translate(-6px,0); /** Chrome & Safari **/
+                -o-transform: translate(-6px,0); /** Opera **/
+                -moz-transform: translate(-6px,0); /** Firefox **/
+            }
+        }
+    }
+}
+
+#right-arrow{
+	position: absolute;
+	transition: 0.5s ease-in-out;
+	-webkit-transition: 0.5s ease-in-out; /** Chrome & Safari **/
+	-moz-transition: 0.5s ease-in-out; /** Firefox **/
+	-o-transition: 0.5s ease-in-out; /** Opera **/
+}
+
+#left-arrow{
+position: absolute;
+transition: 0.5s ease-in-out;
+-webkit-transition: 0.5s ease-in-out; /** Chrome & Safari **/
+-moz-transition: 0.5s ease-in-out; /** Firefox **/
+-o-transition: 0.5s ease-in-out; /** Opera **/
+}
+
 /*#region footer*/
 .socials-container{
 	padding: 30px 0px 0px 0px;
@@ -147,6 +190,12 @@ footer {
 		width: 100%;
 	}
 
+	.page-nav-buttons{
+        width: 60%;
+        a{
+            font-size: 14px;
+        }
+    }
 }
 /*#endregion For mobile phones: */
 /*#region For tablets: */
