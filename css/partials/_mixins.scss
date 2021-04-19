@@ -1,0 +1,31 @@
+@import "./variables";
+
+@mixin title-font {
+	h1{
+		margin: 80px auto;
+		text-align: center;
+		font-family: $raleway;
+		font-size: 20px;
+		font-weight: 400;
+	}
+}
+
+@mixin date-font {
+		font-size: 14px;
+		font-weight: bold;
+}
+
+@mixin sub-heading-font {
+	h2{
+	font-family: $noto-sans;
+	font-size: 30px;
+	}
+}
+
+@mixin p-font{
+	p{
+		font-family: $noto-sans;
+		font-size: 16px;
+		font-weight: 100;
+	}
+}

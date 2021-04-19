@@ -1,0 +1,98 @@
+/*#region welcome-page*/
+#welcome-page {
+	width: 70%;
+	height: 400px;
+	margin: 120px auto;
+	img{
+		display: block;
+		margin:20px auto;
+		width: 150px;
+		height:auto;
+	}
+	h1{
+		margin: 5px;
+		text-align: center;
+		font-family: $raleway;
+		font-size: 40px;
+		font-weight: 300;
+	}
+	h2{
+		font-family: $raleway;
+		font-size: 20px;
+		font-weight: 100;
+		text-align: center
+	}
+}
+
+
+/*#endregion welcome-page*/
+
+/*#region about-me*/
+#about-me-section{
+	background-color: rgb(206, 206, 206);
+	border: 1px solid black;
+	@include title-font();
+	
+}
+.about-me-container{
+	flex-wrap: wrap;
+	display:flex;
+	justify-content: center;
+	align-content: flex-start;
+	margin: 20px auto;
+}
+
+#profile-pic{
+	width: 200px;
+	height: 260px;
+	border: 10px solid white;
+	margin: 20px;
+	box-shadow: 3px 3px black;
+}
+
+#about-me-pic{
+	border-radius: 10px;
+	height: auto;
+	margin: 20px 40px 40px 40px;
+	box-shadow: 3px 3px black;
+	width:80%;
+}
+
+/*#endregion nav-bar*/
+
+/*#region skills-section*/
+#skills-section {
+	width: 70%;
+	margin: auto;
+	@include title-font();
+}
+
+#skills-container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 100px;
+}
+.skill{
+	border: 2px solid black;
+	width: 100px;
+	height: auto;
+	border-radius: 5px;
+	padding: 1%;
+	margin: 5px 5px;
+	box-shadow: 3px 3px black;
+	img{
+		
+		display: block;
+		width: 60px;
+		height: 60px;
+		margin: auto;
+	}
+	h4{
+		text-align: center;
+		margin: 5px;
+		font-style: italic;
+	}
+}
+
+/*#endregion skills-section*/

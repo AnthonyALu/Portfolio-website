@@ -1,0 +1,155 @@
+#work-page {
+	width: 70%;
+	height: 400px; //welcome section
+	margin: 120px auto;
+	img{
+		display: block; //separate from text
+		margin:20px auto;
+		width: 40%; //responsive width
+		height:auto;
+	}
+	h1{
+		margin: 5px;
+		text-align: center;
+		font-family: $raleway;
+		font-size: 40px;
+		font-weight: 300;
+        //text styling
+	}
+}
+
+#cog-background{ //cog animation container
+	width: 40%;
+	height: auto;
+	z-index: -1; //make sure container does not block raycasts
+	position: absolute;
+	#cog1{
+		position:relative;
+		width: 50%;
+		animation: rotation 4s infinite linear; //rotate clockwise infinite
+		animation-direction: reverse;
+	}
+
+	#cog2{
+		width: 30%;
+		position:relative;
+		left: -4%;
+		animation: rotation 2s infinite linear; //rotate anticlockwise infinite
+	}
+
+}
+
+#projects-section{//section for all projects
+	background-color: rgb(206, 206, 206);
+	border: 1px solid black;
+	@include title-font();
+	h1{
+		margin: 60px 20%;
+		text-align: left;
+		font-weight: 600;
+	}
+	
+}
+
+#project-banner{ //project image preview
+	display: block;
+	border: 5px solid rgb(255, 255, 255); //white border to make it look like a photograph
+	width: 100%;
+	height: auto;
+	box-shadow: 3px 3px black; //add shadow to image
+}
+
+.overlay-text{//overlay text description on hover
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  //stretch and position box;
+  opacity: 0; //hide before hover
+  transition: .5s ease; //transition of hover
+  background-color: #000000bd; //make background look dark
+	p{
+		font-family: $raleway;
+		color: white;
+		font-size: 12px;
+		position: absolute;
+        text-align: center;
+        //text style
+		top: 50%;
+		left: 50%;
+        //center text
+		width: 80%;
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%); //CENTER TEXT
+		&:hover{
+			color: rgba(255, 255, 255, 0.445);
+            //change text style on hover
+		}
+	}
+}
+
+
+.projects-container{//holds image and overlay
+	position: relative;
+	width: 60%;
+	margin: 20px auto;
+	&:hover{
+	.overlay-text{
+		opacity: 1;//reveal overlay box on hover
+	}
+	}	
+	p{
+		margin: 10px 0;
+		font-family: $raleway;
+	}
+}
+
+.project-details{//holds text and skill flexbox
+	width: 60%;
+	display: flex;
+	justify-content: space-between;
+	margin: 10px auto;
+}
+.project-skills{//holds skills icons
+	display:flex;
+	justify-content: flex-end; //align icons to end
+	img{
+		width: 30px;
+		height: 30px;
+	}
+}
+
+@media only screen and (min-width: 600px) {
+
+	.project-skills{
+		img{
+			width: 40px;
+			height: 40px;
+		}
+	}
+
+	.overlay-text{
+		p{
+			font-size: 16px;
+		}
+	}
+
+}
+/*#endregion For mobile phones: */
+/*#region For tablets: */
+@media only screen and (min-width: 769px) {
+	.project-skills{
+		img{
+			width: 50px;
+			height: 50px;
+		}
+	}
+
+	.overlay-text{
+		p{
+			font-size: 20px;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+@keyframes rotation {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(359deg);
+	}
+    //loops rotation clockwise
+  }
+
+  @keyframes rotate-back {
+	  100%{
+	  transform: rotate(0deg);
+	  }
+      //loops rotation anti-clockwise
+  }
+
+  @keyframes icon-animation {
+	from {
+	}
+	to {
+		background-color: rgb(128, 128, 128);
+	}
+    //fade color on hover
+  }

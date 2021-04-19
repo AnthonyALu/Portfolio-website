@@ -1,0 +1,68 @@
+@import "./mixins";
+@import "./variables";
+/*#region blog welcome-page*/
+#blog-page {
+	width: 70%;
+    height: 400px;
+	margin: 120px auto;
+	img{
+		display: block;
+		margin:20px auto;
+		width: 20%;
+		height:auto;
+	}
+	h1{
+		margin: 5px;
+		text-align: center;
+		font-family: $raleway;
+		font-size: 40px;
+		font-weight: 300;
+	}
+	h2{
+		font-family: $raleway;
+		font-size: 20px;
+		font-weight: 100;
+		text-align: center
+	}
+}
+
+/*#endregion blog welcome-page*/
+
+.blog-section{
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+	@include title-font();	
+}
+
+.blog-snippet-container{
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+    padding: 40px;
+    color:rgb(0, 0, 0);
+    @include date-font;
+    @include sub-heading-font;
+    @include p-font;
+    border-top: 1px solid black;
+    a{
+        text-decoration: none;
+        color: black;
+        &:hover{
+            span{
+                transform: translate(10px,0);
+                -webkit-transform: translate(10px,0); /** Chrome & Safari **/
+                -o-transform: translate(10px,0); /** Opera **/
+                -moz-transform: translate(10px,0); /** Firefox **/
+            }
+        }
+    }
+}
+
+#right-arrow{
+        position: absolute;
+        margin-left: 6px;
+        transition: 0.5s ease-in-out;
+        -webkit-transition: 0.5s ease-in-out; /** Chrome & Safari **/
+        -moz-transition: 0.5s ease-in-out; /** Firefox **/
+        -o-transition: 0.5s ease-in-out; /** Opera **/
+}
