@@ -1,26 +1,26 @@
 @import "./mixins";
 @import "./variables";
 /*#region blog welcome-page*/
-#blog-page {
+.blog-page {
 	width: 70%;
     height: 400px;
 	margin: 120px auto;
 	img{
 		display: block;
 		margin:20px auto;
-		width: 20%;
+		width: 150px;
 		height:auto;
 	}
 	h1{
 		margin: 5px;
 		text-align: center;
 		font-family: $raleway;
-		font-size: 40px;
+		font-size: 30px;
 		font-weight: 300;
 	}
 	h2{
 		font-family: $raleway;
-		font-size: 20px;
+		font-size: 16px;
 		font-weight: 100;
 		text-align: center
 	}
@@ -35,7 +35,7 @@
 }
 
 .blog-snippet-container{
-    width: 70%;
+    width: 80%;
     margin: auto;
     overflow: hidden;
     padding: 40px;
@@ -43,6 +43,12 @@
     @include date-font;
     @include sub-heading-font;
     @include p-font;
+    h2{
+        font-size:24px;
+    }
+    p{
+        font-size: 14px;
+    }
     border-top: 1px solid black;
     a{
         text-decoration: none;
@@ -57,6 +63,17 @@
         }
     }
 }
+
+
+#read-more-arrow{
+    margin-left: 6px;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out; /** Chrome & Safari **/
+    -moz-transition: 0.5s ease-in-out; /** Firefox **/
+    -o-transition: 0.5s ease-in-out; /** Opera **/
+}
+
 
 #right-arrow{
         position: absolute;
@@ -83,7 +100,7 @@
 
 .blog-content{
     @include title-font();
-    width: 60%;
+    width: 80%;
     margin: auto;
     h1{
         font-size: 30px;
@@ -95,6 +112,7 @@
     }
     h5{
         @include date-font();
+        font-size: 12px;
     }
     p{
         line-height:2;
@@ -108,12 +126,13 @@
 
 .blog-nav-buttons{
     display:flex;
-    width: 60%;
+    width: 80%;
     margin: 40px auto;
     justify-content: space-between;
     a{
         text-decoration: none;
         color:black;
+        font-size: 12px;
         &:hover{
             #right-arrow{
             transform: translate(6px,0);
@@ -130,4 +149,50 @@
                 }
         }
     }
+}
+
+@media only screen and (min-width: 600px) {
+
+	.blog-page{
+		h1{
+			font-size: 40px;
+		}
+        h2{
+            font-size: 20px;
+        }
+	}
+
+    .blog-snippet-container{
+        width: 70%;
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+
+    .blog-content{
+        width: 60%;
+        h3{
+            font-family: $noto-sans;
+            font-size: 18px;
+        }
+        h5{
+            font-size: 14px;
+        }
+    }
+
+    .blog-nav-buttons{
+        width: 60%;
+        a{
+            font-size: 14px;
+        }
+    }
+
+}
+/*#endregion For mobile phones: */
+/*#region For tablets: */
+@media only screen and (min-width: 769px) {
+
 }

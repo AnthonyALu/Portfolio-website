@@ -6,6 +6,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
 @-webkit-keyframes rotation {
   from {
     -webkit-transform: rotate(0deg);
@@ -58,30 +60,30 @@
 }
 
 /*#region welcome-page*/
-#welcome-page {
+.welcome-page {
   width: 70%;
   height: 400px;
   margin: 120px auto;
 }
 
-#welcome-page img {
+.welcome-page img {
   display: block;
   margin: 20px auto;
   width: 150px;
   height: auto;
 }
 
-#welcome-page h1 {
+.welcome-page h1 {
   margin: 5px;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 300;
 }
 
-#welcome-page h2 {
+.welcome-page h2 {
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 100;
   text-align: center;
 }
@@ -113,6 +115,29 @@
   -ms-flex-line-pack: start;
       align-content: flex-start;
   margin: 20px auto;
+}
+
+#about-me-content {
+  background-image: url("../../img/chat-window.png");
+  width: 70%;
+  height: 200px;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+#about-me-content h2 {
+  font-family: "Noto Sans", serif;
+  font-size: 16px;
+}
+
+#about-me-content p {
+  font-size: 12px;
+}
+
+#about-me-content li {
+  line-height: 1.6;
+  font-size: 12px;
 }
 
 #profile-pic {
@@ -184,30 +209,121 @@
   font-style: italic;
 }
 
+.resume-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: 3px solid black;
+  -webkit-box-shadow: 5px 5px black;
+          box-shadow: 5px 5px black;
+  border-radius: 10px;
+  margin: auto;
+  width: 30%;
+  height: 80px;
+}
+
+.resume-container a {
+  text-decoration: none;
+}
+
+.resume-container a:hover #down-arrow {
+  transform: translate(0, 6px);
+  -webkit-transform: translate(0, 6px);
+  /** Chrome & Safari **/
+  -o-transform: translate(0, 6px);
+  /** Opera **/
+  -moz-transform: translate(0, 6px);
+  /** Firefox **/
+}
+
+.resume-container p {
+  width: 80%;
+  font-size: 10px;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  color: black;
+}
+
+#down-arrow {
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  /** Chrome & Safari **/
+  -moz-transition: 0.5s ease-in-out;
+  /** Firefox **/
+  -o-transition: 0.5s ease-in-out;
+  /** Opera **/
+}
+
 /*#endregion skills-section*/
-#work-page {
+@media only screen and (min-width: 500px) {
+  #about-me-content h2 {
+    font-family: "Noto Sans", serif;
+    font-size: 24px;
+  }
+  #about-me-content p {
+    font-size: 14px;
+  }
+  #about-me-content li {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .resume-container p {
+    font-size: 16px;
+  }
+  .welcome-page h2 {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .resume-container p {
+    font-size: 18px;
+  }
+  .welcome-page h1 {
+    font-size: 40px;
+  }
+  #about-me-content p {
+    font-size: 16px;
+  }
+  #about-me-content li {
+    font-size: 16px;
+  }
+}
+
+.work-page {
   width: 70%;
   height: 400px;
   margin: 120px auto;
 }
 
-#work-page img {
+.work-page img {
   display: block;
   margin: 20px auto;
-  width: 40%;
+  width: 150px;
   height: auto;
 }
 
-#work-page h1 {
+.work-page h1 {
   margin: 5px;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 300;
 }
 
 #cog-background {
   width: 40%;
+  max-width: 320px;
   height: auto;
   z-index: -1;
   position: absolute;
@@ -272,7 +388,6 @@
 .overlay-text p {
   font-family: "Raleway", sans-serif;
   color: white;
-  font-size: 12px;
   position: absolute;
   text-align: center;
   top: 50%;
@@ -299,6 +414,7 @@
 .projects-container p {
   margin: 10px 0;
   font-family: "Raleway", sans-serif;
+  font-size: 10px;
 }
 
 .project-details {
@@ -310,6 +426,11 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 10px auto;
+}
+
+.project-details p {
+  font-size: 12px;
+  font-family: "Noto Sans", serif;
 }
 
 .project-skills {
@@ -334,6 +455,15 @@
   .overlay-text p {
     font-size: 16px;
   }
+  .work-page h1 {
+    font-size: 40px;
+  }
+  .projects-container p {
+    font-size: 16px;
+  }
+  .project-details p {
+    font-size: 16px;
+  }
 }
 
 /*#endregion For mobile phones: */
@@ -349,13 +479,15 @@
 }
 
 .project-page {
-  margin-top: 200px;
+  margin-top: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border: 1px solid black;
+  background-color: white;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -363,7 +495,6 @@
 #project-page-description {
   width: 80%;
   top: 0;
-  border: 5px solid black;
   padding: 20px;
   margin: auto;
 }
@@ -399,33 +530,36 @@
         align-self: flex-start;
     margin: 0px 0px 0px 20px;
   }
+  #project-page-description ul {
+    line-height: 2;
+  }
 }
 
 /*#region blog welcome-page*/
-#blog-page {
+.blog-page {
   width: 70%;
   height: 400px;
   margin: 120px auto;
 }
 
-#blog-page img {
+.blog-page img {
   display: block;
   margin: 20px auto;
-  width: 20%;
+  width: 150px;
   height: auto;
 }
 
-#blog-page h1 {
+.blog-page h1 {
   margin: 5px;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 300;
 }
 
-#blog-page h2 {
+.blog-page h2 {
   font-family: "Raleway", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 100;
   text-align: center;
 }
@@ -445,7 +579,7 @@
 }
 
 .blog-snippet-container {
-  width: 70%;
+  width: 80%;
   margin: auto;
   overflow: hidden;
   padding: 40px;
@@ -466,6 +600,14 @@
   font-weight: 100;
 }
 
+.blog-snippet-container h2 {
+  font-size: 24px;
+}
+
+.blog-snippet-container p {
+  font-size: 14px;
+}
+
 .blog-snippet-container a {
   text-decoration: none;
   color: black;
@@ -479,6 +621,18 @@
   /** Opera **/
   -moz-transform: translate(10px, 0);
   /** Firefox **/
+}
+
+#read-more-arrow {
+  margin-left: 6px;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  /** Chrome & Safari **/
+  -moz-transition: 0.5s ease-in-out;
+  /** Firefox **/
+  -o-transition: 0.5s ease-in-out;
+  /** Opera **/
 }
 
 #right-arrow {
@@ -511,7 +665,7 @@
 }
 
 .blog-content {
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
 
@@ -536,6 +690,7 @@
 .blog-content h5 {
   font-size: 14px;
   font-weight: bold;
+  font-size: 12px;
 }
 
 .blog-content p {
@@ -551,7 +706,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 60%;
+  width: 80%;
   margin: 40px auto;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -561,6 +716,7 @@
 .blog-nav-buttons a {
   text-decoration: none;
   color: black;
+  font-size: 12px;
 }
 
 .blog-nav-buttons a:hover #right-arrow {
@@ -583,6 +739,42 @@
   /** Firefox **/
 }
 
+@media only screen and (min-width: 600px) {
+  .blog-page h1 {
+    font-size: 40px;
+  }
+  .blog-page h2 {
+    font-size: 20px;
+  }
+  .blog-snippet-container {
+    width: 70%;
+  }
+  .blog-snippet-container h2 {
+    font-size: 30px;
+  }
+  .blog-snippet-container p {
+    font-size: 16px;
+  }
+  .blog-content {
+    width: 60%;
+  }
+  .blog-content h3 {
+    font-family: "Noto Sans", serif;
+    font-size: 18px;
+  }
+  .blog-content h5 {
+    font-size: 14px;
+  }
+  .blog-nav-buttons {
+    width: 60%;
+  }
+  .blog-nav-buttons a {
+    font-size: 14px;
+  }
+}
+
+/*#endregion For mobile phones: */
+/*#region For tablets: */
 * {
   margin: 0;
   padding: 0;

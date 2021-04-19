@@ -1,18 +1,18 @@
-#work-page {
+.work-page {
 	width: 70%;
 	height: 400px; //welcome section
 	margin: 120px auto;
 	img{
 		display: block; //separate from text
 		margin:20px auto;
-		width: 40%; //responsive width
+		width: 150px; //responsive width
 		height:auto;
 	}
 	h1{
 		margin: 5px;
 		text-align: center;
 		font-family: $raleway;
-		font-size: 40px;
+		font-size: 30px;
 		font-weight: 300;
         //text styling
 	}
@@ -20,6 +20,7 @@
 
 #cog-background{ //cog animation container
 	width: 40%;
+	max-width: 320px;
 	height: auto;
 	z-index: -1; //make sure container does not block raycasts
 	position: absolute;
@@ -72,7 +73,6 @@
 	p{
 		font-family: $raleway;
 		color: white;
-		font-size: 12px;
 		position: absolute;
         text-align: center;
         //text style
@@ -103,6 +103,7 @@
 	p{
 		margin: 10px 0;
 		font-family: $raleway;
+		font-size: 10px;
 	}
 }
 
@@ -111,6 +112,10 @@
 	display: flex;
 	justify-content: space-between;
 	margin: 10px auto;
+	p{
+		font-size: 12px;
+		font-family: $noto-sans;
+	}
 }
 .project-skills{//holds skills icons
 	display:flex;
@@ -136,6 +141,23 @@
 		}
 	}
 
+	.work-page{
+		h1{
+			font-size: 40px;
+		}
+	}
+
+	.projects-container{
+		p{
+			font-size: 16px;
+		}
+	}
+
+	.project-details{
+		p{
+			font-size: 16px;
+		}
+	}
 }
 /*#endregion For mobile phones: */
 /*#region For tablets: */
