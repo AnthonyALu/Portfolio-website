@@ -1,0 +1,45 @@
+.project-page{
+	margin-top: 200px;
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#project-page-description
+{
+	width: 80%;
+  	top: 0;
+	border: 5px solid black;
+	padding: 20px;
+	margin: auto;
+
+}
+
+#project-page-images{
+	margin: auto;
+	display:flex;
+	justify-content: center;
+	img{
+		width: 80%;
+		margin: 20px;
+	}
+	width: 100%;
+	flex-wrap:wrap;
+}
+
+@media only screen and (min-width: 600px) {
+
+	#project-page-images{
+		width: 60%;
+	}
+
+	#project-page-description
+	{
+		width: 30%;
+		position: -webkit-sticky; /* Safari */
+		position: sticky;
+	  align-self: flex-start;
+	  margin: 0px 0px 0px 20px;
+	}
+
+}
