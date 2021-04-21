@@ -103,6 +103,8 @@
 
 #about-me-content {
   background-image: url("../../img/chat-window.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 1px solid black;
   -webkit-box-shadow: 3px 3px black;
           box-shadow: 3px 3px black;

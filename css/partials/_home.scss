@@ -46,6 +46,11 @@
 
 #about-me-content{
 	background-image: url("../../img/chat-window.png"); //bg image
+	background-repeat: no-repeat; //No repeating images for bg
+	-webkit-background-size: cover; //Chrome and Safari
+    -moz-background-size: cover; //Mozilla
+    -o-background-size: cover; //Opera
+    background-size: cover; //covers whole background
 	border: 1px solid black; //black border
 	box-shadow: 3px 3px black; //add shadow
 	width: 70%;
