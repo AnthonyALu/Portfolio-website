@@ -1,0 +1,63 @@
+/*#region footer*/
+.socials-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+	padding: 30px 20px 0px 20px; //make space around items
+	a{
+		margin: 8px; //adds some spacing
+        display: inline;
+		img{
+		filter:grayscale(1) invert(0.7); //change to grayscale
+		-webkit-filter: grayscale(1) invert(0.7);
+		width: 28px;
+		height: 28px;
+		}
+	}
+	p{
+        margin: 6px;
+		display:block; //put text on new line
+	}
+
+	a:hover{
+		img{
+		filter:grayscale(1) invert(1); //changes color to white on hover
+		-webkit-filter: grayscale(1) invert(1);
+		}
+	}
+}
+
+#resume{
+    a{
+        text-decoration: none;
+        font-family: $raleway;
+        text-align:center;
+        margin:auto;
+        color: white;
+        border-radius: 5px;
+        border: 3px solid white;
+        background-color: black;
+        display: inline-block;
+        width: 80px;
+        transition: 0.5s ease-in-out;
+        height: 40px;
+        &:hover{
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
+footer {
+	width: 100%;
+	background-color: black; //black bar
+	margin: 30px 0px 0px 0px;
+	padding-bottom: 10px;
+	text-align: center;
+	font-family: $raleway;
+	color:white;
+	font-size: 14px;
+	//font style added
+}
+/*#endregion footer*/
