@@ -37,12 +37,14 @@ header{
 	height: 60px;
 	//position settings
 	border: 5px solid black; //black border
-	@include title-font(); //add font style
 	h1{
+		text-decoration: none;
+		font-style: $raleway;
 		color: black;
-		font-weight: 600; //bold
+		font-size: 20px;
+		font-weight: 400;
+		text-align: center;
 		margin: 14px auto;
-		transition: 1s ease-in-out; //transition time
 	}
   }
 

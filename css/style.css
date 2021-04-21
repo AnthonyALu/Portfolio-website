@@ -798,18 +798,13 @@ header #logo:hover h1 {
 }
 
 #logo h1 {
-  text-align: center;
-  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+  font-style: "Raleway", sans-serif;
+  color: black;
   font-size: 20px;
   font-weight: 400;
-}
-
-#logo h1 {
-  color: black;
-  font-weight: 600;
+  text-align: center;
   margin: 14px auto;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
 }
 
 /*#region nav-bar*/
