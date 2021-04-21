@@ -6,7 +6,7 @@
 @import "partials/projects";
 @import "partials/blog";
 @import "partials/footer";
-
+//imports partials
 * {
 	margin: 0;
 	padding: 0;
@@ -20,29 +20,29 @@ html {
 
 header{
 	#logo:hover{
-		background-color:black;
+		background-color:black; //change bg to black on hover
 		h1{
-			color:white;
+			color:white; //change text to white on hover
 		}
 	}
 }
 
 #logo {
-	position: absolute;
-	background-color: white;
-	transition: 1s ease-in-out;
-	left: 10%;
+	position: absolute; //unpins positioning
+	background-color: white; //bg color
+	transition: 1s ease-in-out; //1 second transition time
+	left: 10%; //positioning
+	top: 6%; //positioning
 	width: 60px;
 	height: 60px;
-	top: 6%;
 	//position settings
 	border: 5px solid black; //black border
 	@include title-font(); //add font style
 	h1{
 		color: black;
-		font-weight: 600;
+		font-weight: 600; //bold
 		margin: 14px auto;
-		transition: 1s ease-in-out;
+		transition: 1s ease-in-out; //transition time
 	}
   }
 
@@ -50,7 +50,6 @@ header{
 .nav-bar {
 	padding-top: 60px;
 	padding-right: 40px;
-	font-size: 100%;
 	font-weight: bold;
 	font-family: "Noto Sans", serif;
 	display: flex; 
@@ -76,8 +75,8 @@ header{
     margin: 40px auto;
     justify-content: space-between; //separate the nav buttons
     a{
-        text-decoration: none;
-        color:black;
+        text-decoration: none; //removes underline
+        color:black; //black font
         font-size: 12px;
         &:hover{
             #right-arrow{
@@ -98,16 +97,16 @@ header{
 }
 
 #right-arrow{
-	position: absolute;
-	transition: 0.5s ease-in-out;
+	position: absolute; //unpin positioning
+	transition: 0.5s ease-in-out; //0.5 second transition and exit
 	-webkit-transition: 0.5s ease-in-out; /** Chrome & Safari **/
 	-moz-transition: 0.5s ease-in-out; /** Firefox **/
 	-o-transition: 0.5s ease-in-out; /** Opera **/
 }
 
 #left-arrow{
-position: absolute;
-transition: 0.5s ease-in-out;
+position: absolute; //unpin positioning
+transition: 0.5s ease-in-out; //0.5 second transition and exit
 -webkit-transition: 0.5s ease-in-out; /** Chrome & Safari **/
 -moz-transition: 0.5s ease-in-out; /** Firefox **/
 -o-transition: 0.5s ease-in-out; /** Opera **/
@@ -117,6 +116,7 @@ transition: 0.5s ease-in-out;
 [class*="col-"] {
 	width: 100%;
 }
+/*#endregion For mobile phones: */
 @media only screen and (min-width: 600px) {
 	.col-s-1{
 		width: 8.33%;
@@ -162,8 +162,8 @@ transition: 0.5s ease-in-out;
         }
     }
 }
-/*#endregion For mobile phones: */
-/*#region For tablets: */
+
+
 @media only screen and (min-width: 769px) {
 	.col-1 {
 		width: 8.33%;

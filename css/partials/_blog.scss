@@ -1,61 +1,66 @@
 @import "./mixins";
 @import "./variables";
-/*#region blog welcome-page*/
 .blog-page {
+    /*#region welcome page sizing*/
 	width: 70%;
     height: 400px;
 	margin: 120px auto;
+    /*#endregion welcome page sizing*/
 	img{
-		display: block;
-		margin:20px auto;
-		width: 150px;
-		height:auto;
+		display: block; //separate image from text
+		margin:20px auto; //create space above and below and center
+		width: 150px; //sizing
+		height:auto; //sizing
 	}
+
 	h1{
-		margin: 5px;
+		margin: 5px; //create space around text
 		text-align: center;
-		font-family: $raleway;
-		font-size: 30px;
-		font-weight: 300;
+		font-family: $raleway; //change font
+		font-size: 30px; 
+		font-weight: 300; //bold font
 	}
+
 	h2{
-		font-family: $raleway;
+		font-family: $raleway; //change font
 		font-size: 16px;
-		font-weight: 100;
+		font-weight: 100; //make font thin
 		text-align: center
 	}
 }
 
-/*#endregion blog welcome-page*/
-
 .blog-section{
-	background-color: rgb(255, 255, 255);
-	border: 1px solid black;
-	@include title-font();	
+	background-color: rgb(255, 255, 255); //make border white
+	border: 1px solid black; //create thin divider
+	@include title-font(); //h1 font mixin
+    h1{
+        margin: 80px auto; //space top bottom
+    }
+    padding-bottom: 30px; //create space below
 }
 
 .blog-snippet-container{
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    padding: 40px;
-    color:rgb(0, 0, 0);
-    @include date-font;
-    @include sub-heading-font;
-    @include p-font;
+    width: 80%; //responsive sizing
+    margin: auto; //center container
+    overflow: hidden; //hides anything outside container
+    padding: 40px; //creates space around text
+    color:rgb(0, 0, 0); //change font color
+    border-top: 1px solid black; //thin black divider
+    @include date-font; //mixin date font
+    @include sub-heading-font; //mixin subheading font
+    @include p-font; //mixin paragraph font
     h2{
         font-size:24px;
     }
     p{
         font-size: 14px;
     }
-    border-top: 1px solid black;
     a{
-        text-decoration: none;
+        text-decoration: none; //removes underline
         color: black;
         &:hover{
             span{
-                transform: translate(10px,0);
+                transform: translate(10px,0); //moves span 10px to right
                 -webkit-transform: translate(10px,0); /** Chrome & Safari **/
                 -o-transform: translate(10px,0); /** Opera **/
                 -moz-transform: translate(10px,0); /** Firefox **/
@@ -66,81 +71,77 @@
 
 
 #read-more-arrow{
-    margin-left: 6px;
-    position: absolute;
-    transition: 0.5s ease-in-out;
+    margin-left: 6px; //create space on left
+    position: absolute; //unpins positioning
+    transition: 0.5s ease-in-out; //animates then reverses animation on exit
     -webkit-transition: 0.5s ease-in-out; /** Chrome & Safari **/
     -moz-transition: 0.5s ease-in-out; /** Firefox **/
     -o-transition: 0.5s ease-in-out; /** Opera **/
 }
 
 .blog-post-section{
-    margin-top: 50px;
-	background-color: rgb(255, 255, 255);
-	border: 1px solid black;
-    padding: 30px;	
+    margin-top: 50px; //add spacing on top
+	background-color: rgb(255, 255, 255); //change bg color to white
+	border: 1px solid black; //add black border
+    padding: 30px;	//centers content
 }
 
 .blog-content{
-    @include title-font();
-    width: 80%;
-    margin: auto;
+    @include title-font(); //mixin
+    width: 80%; //squishes to be easier to read
+    margin: auto; //center content
     h1{
+        margin: 80px auto; //space top bottom
         font-size: 30px;
-        font-weight: 400;
+        font-weight: 400; //bold
     }
     h3{
         font-family: $noto-sans;
         font-size: 18px;
     }
     h5{
-        @include date-font();
+        @include date-font(); //mixin date font
         font-size: 12px;
     }
     p{
-        line-height:2;
+        line-height:2; //line spacing
         font-family: $noto-sans;
     }
     img{
-        width:100%;
+        width:100%; //aligns photo to be same width as content
     }
 }
 
 @media only screen and (min-width: 600px) {
-
+//tablet view
 	.blog-page{
 		h1{
-			font-size: 40px;
+			font-size: 40px; //increase font size
 		}
         h2{
-            font-size: 20px;
+            font-size: 20px; //increase font size
         }
 	}
 
     .blog-snippet-container{
-        width: 70%;
+        width: 70%; //decrease width to make it easier to read
         h2{
-            font-size: 30px;
+            font-size: 30px; //increase font size
         }
         p{
-            font-size: 16px;
+            font-size: 16px; //increase font size
         }
     }
 
     .blog-content{
-        width: 60%;
+        width: 60%; //decrease width to make it easier to read
         h3{
-            font-family: $noto-sans;
-            font-size: 18px;
+            font-size: 18px; //make text larger
         }
         h5{
-            font-size: 14px;
+            font-size: 14px; //make text larger
         }
     }
 
 }
-/*#endregion For mobile phones: */
-/*#region For tablets: */
-@media only screen and (min-width: 769px) {
 
-}

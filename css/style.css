@@ -76,11 +76,11 @@
 /*#region about-me*/
 #about-me-section {
   background-color: #cecece;
+  padding: 40px 0px;
   border: 1px solid black;
 }
 
 #about-me-section h1 {
-  margin: 80px auto;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -88,11 +88,11 @@
 }
 
 .about-me-container {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -138,22 +138,19 @@
 
 #about-me-pic {
   border-radius: 10px;
-  height: auto;
-  margin: 20px 40px 40px 40px;
   -webkit-box-shadow: 3px 3px black;
           box-shadow: 3px 3px black;
   width: 80%;
 }
 
-/*#endregion nav-bar*/
 /*#region skills-section*/
 #skills-section {
   width: 80%;
-  margin: auto;
+  margin: 40px auto;
+  padding-bottom: 30px;
 }
 
 #skills-section h1 {
-  margin: 80px auto;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -177,8 +174,8 @@
   width: 100px;
   height: auto;
   border-radius: 5px;
-  padding: 1%;
-  margin: 5px 5px;
+  padding: 6px;
+  margin: 5px;
   -webkit-box-shadow: 3px 3px black;
           box-shadow: 3px 3px black;
 }
@@ -213,6 +210,7 @@
   border-radius: 10px;
   margin: auto;
   width: 30%;
+  min-width: 120px;
   height: 80px;
 }
 
@@ -252,7 +250,6 @@
 /*#endregion skills-section*/
 @media only screen and (min-width: 500px) {
   #about-me-content h2 {
-    font-family: "Noto Sans", serif;
     font-size: 24px;
   }
   #about-me-content p {
@@ -332,10 +329,10 @@
 #projects-section {
   background-color: #cecece;
   border: 1px solid black;
+  padding-bottom: 30px;
 }
 
 #projects-section h1 {
-  margin: 80px auto;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -519,11 +516,12 @@
   }
 }
 
-/*#region blog welcome-page*/
 .blog-page {
+  /*#region welcome page sizing*/
   width: 70%;
   height: 400px;
   margin: 120px auto;
+  /*#endregion welcome page sizing*/
 }
 
 .blog-page img {
@@ -548,18 +546,21 @@
   text-align: center;
 }
 
-/*#endregion blog welcome-page*/
 .blog-section {
   background-color: white;
   border: 1px solid black;
+  padding-bottom: 30px;
 }
 
 .blog-section h1 {
-  margin: 80px auto;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
   font-weight: 400;
+}
+
+.blog-section h1 {
+  margin: 80px auto;
 }
 
 .blog-snippet-container {
@@ -568,9 +569,9 @@
   overflow: hidden;
   padding: 40px;
   color: black;
+  border-top: 1px solid black;
   font-size: 14px;
   font-weight: bold;
-  border-top: 1px solid black;
 }
 
 .blog-snippet-container h2 {
@@ -632,7 +633,6 @@
 }
 
 .blog-content h1 {
-  margin: 80px auto;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -640,6 +640,7 @@
 }
 
 .blog-content h1 {
+  margin: 80px auto;
   font-size: 30px;
   font-weight: 400;
 }
@@ -684,7 +685,6 @@
     width: 60%;
   }
   .blog-content h3 {
-    font-family: "Noto Sans", serif;
     font-size: 18px;
   }
   .blog-content h5 {
@@ -692,9 +692,6 @@
   }
 }
 
-/*#endregion For mobile phones: */
-/*#region For tablets: */
-/*#region footer*/
 .socials-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -743,9 +740,9 @@
   background-color: black;
   display: inline-block;
   width: 80px;
+  height: 40px;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  height: 40px;
 }
 
 #resume a:hover {
@@ -756,12 +753,14 @@
 footer {
   width: 100%;
   background-color: black;
-  margin: 30px 0px 0px 0px;
+  margin: auto;
   padding-bottom: 10px;
+  /*#region font-style added*/
   text-align: center;
   font-family: "Raleway", sans-serif;
   color: white;
   font-size: 14px;
+  /*#endregion font-style added*/
 }
 
 /*#endregion footer*/
@@ -790,14 +789,13 @@ header #logo:hover h1 {
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
   left: 10%;
+  top: 6%;
   width: 60px;
   height: 60px;
-  top: 6%;
   border: 5px solid black;
 }
 
 #logo h1 {
-  margin: 80px auto;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 20px;
@@ -816,7 +814,6 @@ header #logo:hover h1 {
 .nav-bar {
   padding-top: 60px;
   padding-right: 40px;
-  font-size: 100%;
   font-weight: bold;
   font-family: "Noto Sans", serif;
   display: -webkit-box;
@@ -905,6 +902,7 @@ header #logo:hover h1 {
   width: 100%;
 }
 
+/*#endregion For mobile phones: */
 @media only screen and (min-width: 600px) {
   .col-s-1 {
     width: 8.33%;
@@ -950,8 +948,6 @@ header #logo:hover h1 {
   }
 }
 
-/*#endregion For mobile phones: */
-/*#region For tablets: */
 @media only screen and (min-width: 769px) {
   .col-1 {
     width: 8.33%;
