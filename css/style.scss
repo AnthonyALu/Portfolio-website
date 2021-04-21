@@ -117,7 +117,9 @@ transition: 0.5s ease-in-out; //0.5 second transition and exit
 	width: 100%;
 }
 /*#endregion For mobile phones: */
+
 @media only screen and (min-width: 600px) {
+	//tablet sizes
 	.col-s-1{
 		width: 8.33%;
 	}
@@ -165,6 +167,7 @@ transition: 0.5s ease-in-out; //0.5 second transition and exit
 
 
 @media only screen and (min-width: 769px) {
+	//desktop sizes
 	.col-1 {
 		width: 8.33%;
 	}
@@ -203,4 +206,3 @@ transition: 0.5s ease-in-out; //0.5 second transition and exit
 	}
 
 }
-/*#endregion For tablets: */
