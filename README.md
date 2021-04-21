@@ -17,19 +17,20 @@ Logo - Animated logo that links to the home screen.
 Navigation Bar - Easy navigation on all pages
 Call to action buttons - Animated read more/overlay buttons to engage audience and convince them to see more of my work/blogs
 Animated visuals - Animations to help retain attention
-Footer - Contains contact details
+Footer - Contains contact details with hover effects
 Social media icon buttons - Helps potential partners find me on socials
 About me page - Contains information about me and what skills I have
 Projects page - Showcase of previous projects
 Blog page - Blog for people to read what I have been up to
 Clean website - Not too many animations or hover effects so that it is easy to read and straight to the point
-Styling visuals - Helps retain attention
+Styling visuals - CSS Styling on images and buttons to help retain attention
 Easy navigation - Navigation bar on all pages and navigation buttons to see previous/next project/blogs
 Responsive design - Website still works on mobile
 
 # Sitemap
 
 ![Sitemap](screenshots/Sitemap.png)
+https://anthony-lu.netlify.app/sitemap.xml
 
 # Screenshots
 
