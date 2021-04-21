@@ -2,26 +2,26 @@
 
 /*#region welcome-page*/
 .welcome-page {
-	width: 70%;
-	height: 400px;
-	margin: 120px auto;
+	width: 70%; //sizing
+	height: 400px; //sizing
+	margin: 120px auto; //margin on top and bottom
 	img{
-		display: block;
-		margin:20px auto;
-		width: 150px;
+		display: block; //separate image from text
+		margin:20px auto; //margin on top and bottom
+		width: 150px; 
 		height:auto;
 	}
 	h1{
-		margin: 5px;
+		margin: 5px; //create space around text
 		text-align: center;
-		font-family: $raleway;
+		font-family: $raleway; //change font
 		font-size: 30px;
-		font-weight: 300;
+		font-weight: 300; //font slightly bold
 	}
 	h2{
-		font-family: $raleway;
+		font-family: $raleway; //change font
 		font-size: 16px;
-		font-weight: 100;
+		font-weight: 100; //thin font
 		text-align: center
 	}
 }
@@ -31,36 +31,37 @@
 
 /*#region about-me*/
 #about-me-section{
-	background-color: rgb(206, 206, 206);
-	border: 1px solid black;
-	@include title-font();
+	background-color: rgb(206, 206, 206); // change bg color
+	padding: 40px 0px;//space top bottom
+	border: 1px solid black; //black border
+	@include title-font(); //mixin title font
 }
 .about-me-container{
-	flex-wrap: wrap;
-	display:flex;
-	justify-content: center;
-	align-content: flex-start;
-	margin: 20px auto;
+	display:flex; //flexbox
+	flex-wrap: wrap; //wrap on small screens
+	justify-content: center; //center content
+	align-content: flex-start; //arrange content to left
+	margin: 20px auto; //top bottom margin
 }
 
 #about-me-content{
-	background-image: url("../../img/chat-window.png");
-	border: 1px solid black;
-	box-shadow: 3px 3px black;
+	background-image: url("../../img/chat-window.png"); //bg image
+	border: 1px solid black; //black border
+	box-shadow: 3px 3px black; //add shadow
 	width: 70%;
 	height: 200px;
 	margin: 20px auto;
-	border-radius: 10px;
-	padding:30px;
+	border-radius: 10px; //rounded edges
+	padding:30px; //padding for text
 	h2{
-		font-family: $noto-sans;
+		font-family: $noto-sans; //change font
 		font-size: 16px;	
 	}
 	p{
 		font-size: 12px;
 	}
 	li{
-		line-height: 1.6;
+		line-height: 1.6; //increase line spacing
 		font-size: 12px;
 	}
 }
@@ -68,48 +69,44 @@
 #profile-pic{
 	width: 200px;
 	height: 260px;
-	border: 10px solid white;
-	margin: 20px;
-	box-shadow: 3px 3px black;
+	border: 10px solid white; //white border
+	margin: 20px; //space around
+	box-shadow: 3px 3px black; //shadow
 }
 
 #about-me-pic{
-	border-radius: 10px;
-	height: auto;
-	margin: 20px 40px 40px 40px;
-	box-shadow: 3px 3px black;
+	border-radius: 10px; //rounded edges
+	box-shadow: 3px 3px black; //shadow
 	width:80%;
 }
-
-/*#endregion nav-bar*/
 
 /*#region skills-section*/
 #skills-section {
 	width: 80%;
-	margin: auto;
-	@include title-font();
+	margin: 40px auto; //space top bottom
+	padding-bottom: 30px; //space on bottom
+	@include title-font(); //mixin title font
 }
 
 #skills-container{
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: 40px;
+	flex-wrap: wrap; //wrap on smaller screens
+	justify-content: center; //center content
+	margin: 40px; //space around
 }
 .skill{
-	border: 2px solid black;
+	border: 2px solid black; //black border
 	width: 100px;
 	height: auto;
-	border-radius: 5px;
-	padding: 1%;
-	margin: 5px 5px;
-	box-shadow: 3px 3px black;
+	border-radius: 5px; //rounded edges
+	padding: 6px; //centers content more
+	margin: 5px; //spacing around
+	box-shadow: 3px 3px black; //shadow
 	img{
-		
 		display: block;
 		width: 60px;
 		height: 60px;
-		margin: auto;
+		margin: auto; //center
 	}
 	h4{
 		text-align: center;
@@ -119,21 +116,22 @@
 }
 
 .resume-container{
-	display:flex;
-	justify-content: center;
+	display:flex; //flexbox
+	justify-content: center; //centers content
 	align-items: center; //centers text vertically
-	background-color: white;
-	border: 3px solid black;
-	box-shadow: 5px 5px black;
-	border-radius: 10px;
-	margin: auto;
+	background-color: white; //bg white
+	border: 3px solid black; //black border
+	box-shadow: 5px 5px black; //black shadow
+	border-radius: 10px; //rounded edges
+	margin: auto; //center
 	width: 30%;
+	min-width: 120px; //minimum width
 	height: 80px;
 	a{
-		text-decoration: none;
+		text-decoration: none; //removes underline
 		&:hover{
 			#down-arrow{
-				transform: translate(0,6px);
+				transform: translate(0,6px); //move arrow down
 				-webkit-transform: translate(0,6px); /** Chrome & Safari **/
 				-o-transform: translate(0,6px); /** Opera **/
 				-moz-transform: translate(0,6px); /** Firefox **/
@@ -143,15 +141,15 @@
 	p{
 		width: 80%;
 		font-size: 16px;
-		font-family: $raleway;
+		font-family: $raleway; //change font
 		text-align: center;
-		color:black;
+		color:black; //black font
 	}
 }
 
 #down-arrow{
-	position: absolute;
-	transition: 0.5s ease-in-out;
+	position: absolute; //unpins position
+	transition: 0.5s ease-in-out; //0.5s animation time
 	-webkit-transition: 0.5s ease-in-out; /** Chrome & Safari **/
 	-moz-transition: 0.5s ease-in-out; /** Firefox **/
 	-o-transition: 0.5s ease-in-out; /** Opera **/
@@ -162,45 +160,45 @@
 
 	#about-me-content{
 		h2{
-			font-family: $noto-sans;
-			font-size: 24px;	
+			font-size: 24px; //increase font
 		}
 		p{
-			font-size: 14px;
+			font-size: 14px; //increase font
 		}
 		li{
-			font-size: 14px;
+			font-size: 14px; //increase font
 		}
 	}
 }
 @media only screen and (min-width: 600px) {
-
+//tablet size
 	.welcome-page{
 		h2{
-			font-size:20px;
+			font-size:20px; //increase font
 		}
 	}
 }
 
 @media only screen and (min-width: 769px) {
+	//desktop
 	.resume-container{
 		p{
-			font-size: 18px;
+			font-size: 18px; //increase font
 		}
 	}
 
 	.welcome-page{
 		h1{
-			font-size:40px;
+			font-size:40px; //increase font
 		}
 	}
 
 	#about-me-content{
 		p{
-			font-size: 16px;
+			font-size: 16px; //increase font
 		}
 		li{
-			font-size: 16px;
+			font-size: 16px; //increase font
 		}
 	}
 }

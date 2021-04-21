@@ -1,51 +1,49 @@
 .project-page{
-	margin-top: 140px;
-	display:flex;
-	justify-content: space-between;
-	border: 1px solid black;
-	background-color: white;
-	flex-wrap: wrap;
+	margin-top: 140px; //space top
+	display:flex; //flex box
+	justify-content: space-between; //keep items on sides
+	border: 1px solid black; //black border
+	background-color: white; //white bg
+	flex-wrap: wrap; //wrap on smaller screens
 }
 
 #project-page-description
 {
 	width: 80%;
-  	top: 0;
-	padding: 20px;
-	margin: auto;
+  	top: 0; //stick to top
+	padding: 20px; //space around
+	margin: auto; //center
 }
 
 #project-page-images{
-	margin: auto;
-	display:flex;
-	justify-content: center;
+	margin: auto; //center
+	display:flex; //flexbo
+	justify-content: center; //center content
 	img{
 		width: 80%;
 		margin: 20px;
 	}
-	width: 100%;
-	flex-wrap:wrap;
+	width: 100%; //stretch
+	flex-wrap:wrap; //wrap on smaller screens to wrap around text
 }
 
 @media only screen and (min-width: 600px) {
+//tablet size
 
 	#project-page-images{
-		width: 60%;
+		width: 60%; //decrease width to allow better flex
 	}
 
 	#project-page-description
 	{
 		width: 30%;
 		position: -webkit-sticky; /* Safari */
-		position: sticky;
-	  	align-self: flex-start;
-	  	margin: 0px 0px 0px 20px;
+		position: sticky; //start sticking to top
+	  	align-self: flex-start; //swap to flex start
+	  	margin: 0px 0px 0px 20px; //20 px from side
 	  ul{
-		line-height: 2;
+		line-height: 2; //line spacing on list
 	  }
 	}
 
-}
-
-@media only screen and (min-width: 769px) {
 }

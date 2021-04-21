@@ -1,9 +1,9 @@
 @import "./variables";
 
 @mixin title-font {
+	//title style
 	h1{
-		margin: 80px auto;
-		text-align: center;
+		text-align: center; //center
 		font-family: $raleway;
 		font-size: 20px;
 		font-weight: 400;
@@ -11,11 +11,13 @@
 }
 
 @mixin date-font {
+	//style used for dates
 		font-size: 14px;
 		font-weight: bold;
 }
 
 @mixin sub-heading-font {
+	//style used for subheadings
 	h2{
 	font-family: $noto-sans;
 	font-size: 30px;
@@ -23,6 +25,7 @@
 }
 
 @mixin p-font{
+	//style used for paragraph
 	p{
 		font-family: $noto-sans;
 		font-size: 16px;
