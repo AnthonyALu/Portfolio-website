@@ -5,6 +5,7 @@
 @import "partials/work";
 @import "partials/projects";
 @import "partials/blog";
+@import "partials/footer";
 
 * {
 	margin: 0;
@@ -19,14 +20,17 @@ html {
 
 header{
 	#logo:hover{
-		animation: icon-animation 1s; //change color on hover
-		animation-fill-mode: forwards; //Stay on final frame when hovering
+		background-color:black;
+		h1{
+			color:white;
+		}
 	}
 }
 
 #logo {
 	position: absolute;
 	background-color: white;
+	transition: 1s ease-in-out;
 	left: 10%;
 	width: 60px;
 	height: 60px;
@@ -38,6 +42,7 @@ header{
 		color: black;
 		font-weight: 600;
 		margin: 14px auto;
+		transition: 1s ease-in-out;
 	}
   }
 
@@ -107,46 +112,6 @@ transition: 0.5s ease-in-out;
 -moz-transition: 0.5s ease-in-out; /** Firefox **/
 -o-transition: 0.5s ease-in-out; /** Opera **/
 }
-
-/*#region footer*/
-.socials-container{
-	padding: 30px 0px 0px 0px;
-	a{
-		margin: 8px; //adds some spacing
-		img{
-		filter:grayscale(1) invert(0.7); //change to grayscale
-		-webkit-filter: grayscale(1) invert(0.7);
-		width: 28px;
-		height: 28px;
-		}
-	}
-	p{
-		display:inline; //put text on same line as images
-	}
-
-	a:hover{
-		img{
-		filter:grayscale(1) invert(1); //changes color to white on hover
-		-webkit-filter: grayscale(1) invert(1);
-		}
-	}
-}
-
-footer {
-	width: 100%;
-	background-color: black; //black bar
-	margin: 30px 0px 0px 0px;
-	padding-bottom: 10px;
-	text-align: center;
-	font-family: $raleway;
-	color:white;
-	font-size: 14px;
-	//font style added
-}
-/*#endregion footer*/
-
-
-
 
 /*#region For mobile phones: */
 [class*="col-"] {
