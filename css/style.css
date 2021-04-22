@@ -788,8 +788,6 @@ header #logo:hover h1 {
 #logo {
   position: absolute;
   background-color: white;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
   left: 10%;
   top: 6%;
   width: 60px;
@@ -798,13 +796,14 @@ header #logo:hover h1 {
 }
 
 #logo h1 {
-  text-decoration: none;
   font-style: "Raleway", sans-serif;
   color: black;
   font-size: 20px;
   font-weight: 400;
   text-align: center;
   margin: 14px auto;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 /*#region nav-bar*/
