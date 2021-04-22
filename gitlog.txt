@@ -1,0 +1,296 @@
+commit a8424d10aa0fd2050d5b4859c04813f016bf7406
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Thu Apr 22 16:09:06 2021 +1000
+
+    added 512 SHA
+
+commit 1904234bca902d98d932733f1c766a301370c87b
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Thu Apr 22 01:08:40 2021 +1000
+
+    added SRI to all site pages
+
+commit d25acd98d32a171a688b59051b2b963a444161df
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Thu Apr 22 00:21:00 2021 +1000
+
+    checking SRI
+
+commit 4e6d78af8940ea70460188ae98e6bbd4c61635b8
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Thu Apr 22 00:12:06 2021 +1000
+
+    checking SRI
+
+commit dd52176ae9f12ee01b5d0ed8e012285e69b4a778
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Thu Apr 22 00:09:29 2021 +1000
+
+    checking SRI
+
+commit e60e2803745879aa20afee207722c1436c55330a
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Thu Apr 22 00:08:46 2021 +1000
+
+    added SRI to index.html
+
+commit 7d11678da910415b432bd240261e93801da655fa
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Wed Apr 21 23:53:46 2021 +1000
+
+    adding google verification SEO
+
+commit 609013e9269587d606812633ae4fa3dca471cd74
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Wed Apr 21 23:47:45 2021 +1000
+
+    added XML sitemap
+
+commit 3a07dc5a05f3e4bbfcf2ed95a0489013837608ee
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Wed Apr 21 23:44:26 2021 +1000
+
+    added no stretch bg and README
+
+commit 032f16e1b092d9377fc358c0aa0bbbdc11b08d9d
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Wed Apr 21 16:07:15 2021 +1000
+
+    changed some titles
+
+commit 97004b67728056af1d025de95181351ef0549eab
+Merge: 03618fe 44ae03a
+Author: Anthony Lu <anthony.lu1115@gmail.com>
+Date:   Wed Apr 21 15:40:31 2021 +1000
+
+    Merge pull request #15 from AnthonyALu/comments
+    
+    added comments to code
+
+commit 44ae03a50119d9c67cf94870d7385de837e8722f
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Wed Apr 21 15:39:16 2021 +1000
+
+    added comments to code
+
+commit 03618fe09e388e3f5cfa6384e778c843e475586a
+Merge: f6d92f1 a4d7982
+Author: Anthony Lu <anthony.lu1115@gmail.com>
+Date:   Wed Apr 21 12:29:06 2021 +1000
+
+    Merge pull request #14 from AnthonyALu/footer-resume
+    
+    added resume to footer
+
+commit a4d79828f301be51707317a3a464efc3e1379f86
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Wed Apr 21 12:24:35 2021 +1000
+
+    added resume to footer
+
+commit f6d92f15bf757f8ee5f28f5696bf4b5d89817aec
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Tue Apr 20 11:30:48 2021 +1000
+
+    added shadow to about-me background
+
+commit 6fef3869b17c410e44f3bb9b2a684440598293e3
+Merge: 8adcfe0 e32b221
+Author: Anthony Lu <anthony.lu1115@gmail.com>
+Date:   Tue Apr 20 09:57:40 2021 +1000
+
+    Merge pull request #13 from AnthonyALu/project-template
+    
+    added navigation pages to projects
+
+commit e32b2211b0aebf6bbea6da38f269da1cf40fa00d
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Tue Apr 20 09:57:00 2021 +1000
+
+    added navigation pages to projects
+
+commit 8adcfe0ddc4b00238557d1480211be60738558f6
+Merge: d05b5a0 0c93814
+Author: Anthony Lu <anthony.lu1115@gmail.com>
+Date:   Tue Apr 20 09:27:45 2021 +1000
+
+    Merge pull request #12 from AnthonyALu/final-edits
+    
+    centered footer
+
+commit 0c9381490479b35bb707976d886a96f8ba4dd17a
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Tue Apr 20 09:23:37 2021 +1000
+
+    centered footer
+
+commit d05b5a041a29ef7845f8f15d65ab63e0b5bc060f
+Merge: 11c2339 6a774e9
+Author: Anthony Lu <anthony.lu1115@gmail.com>
+Date:   Tue Apr 20 09:16:07 2021 +1000
+
+    Merge pull request #11 from AnthonyALu/final-edits
+    
+    added responsive design and final touches
+
+commit 6a774e99554b904561edf0468814fac6041136d1
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Tue Apr 20 09:15:25 2021 +1000
+
+    added responsive design and final touches
+
+commit 11c23390d0b7b03f7b295cabf65773513901d538
+Merge: 640fd18 3457eb9
+Author: Anthony Lu <anthony.lu1115@gmail.com>
+Date:   Mon Apr 19 17:17:04 2021 +1000
+
+    Merge pull request #10 from AnthonyALu/first-blog
+    
+    added blog posts
+
+commit 3457eb91e09e635fdc5891b3c38563ac70f6b950
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Mon Apr 19 17:10:05 2021 +1000
+
+    added blog posts
+
+commit 640fd18603a6da857639a0f2c3de43db563212be
+Merge: 1a46f35 cad316a
+Author: Anthony Lu <anthony.lu1115@gmail.com>
+Date:   Mon Apr 19 11:33:49 2021 +1000
+
+    Merge pull request #9 from AnthonyALu/blog
+    
+    added blog page
+
+commit cad316a48f8ce01f21409a469dea29d681df385e
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Mon Apr 19 11:33:17 2021 +1000
+
+    added blog page
+
+commit 1a46f3570c739afe8d6ee5837f3bd7d0f5fb5037
+Merge: fd59813 5eba2e2
+Author: Anthony Lu <anthony.lu1115@gmail.com>
+Date:   Fri Apr 16 17:49:19 2021 +1000
+
+    Merge pull request #8 from AnthonyALu/eat-ya-food-project
+    
+    finished eat-ya-food page
+
+commit 5eba2e2dfb4de814361529a6241b8324529cd1cd
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Fri Apr 16 17:47:17 2021 +1000
+
+    finished eat-ya-food page
+
+commit fd5981307e29643bd0d42f6546c04dc4d5272863
+Merge: fbe14b0 d660ba9
+Author: Anthony Lu <anthony.lu1115@gmail.com>
+Date:   Thu Apr 15 15:16:40 2021 +1000
+
+    Merge pull request #7 from AnthonyALu/interactive-projects
+    
+    added project interactivity
+
+commit d660ba9dfa0205589449f3c496d9f21df61765c9
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Thu Apr 15 15:15:40 2021 +1000
+
+    added project interactivity
+
+commit fbe14b041b9dd501fa882268610d37f7a428a181
+Merge: f8246f2 c96a920
+Author: Anthony Lu <anthony.lu1115@gmail.com>
+Date:   Tue Apr 13 15:42:01 2021 +1000
+
+    Merge pull request #6 from AnthonyALu/home-icon
+    
+    home-logo completed
+
+commit c96a9201162831fc51db51cebb83a26756654346
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Tue Apr 13 15:41:15 2021 +1000
+
+    home-logo completed
+
+commit f8246f201e18c31dda66531662a40f12543a2ce5
+Merge: 65edd37 5f21cda
+Author: Anthony Lu <anthony.lu1115@gmail.com>
+Date:   Tue Apr 13 14:15:59 2021 +1000
+
+    Merge pull request #5 from AnthonyALu/work
+    
+    cog animation added
+
+commit 5f21cda8d608c5f20b4ae0f6ae41f3cfa68eeb59
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Tue Apr 13 14:15:16 2021 +1000
+
+    cog animation added
+
+commit 65edd37a2aff421b8d03e9cc3f4ebdc6450bd402
+Merge: bb8c89f 6ab72d8
+Author: Anthony Lu <anthony.lu1115@gmail.com>
+Date:   Mon Apr 12 21:24:31 2021 +1000
+
+    Merge pull request #4 from AnthonyALu/work
+    
+    added project containers
+
+commit 6ab72d8fc7c980f379b576494fb82250a31141ab
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Mon Apr 12 21:23:55 2021 +1000
+
+    added project containers
+
+commit bb8c89ffe50802b996f5e9bad365849567e44f44
+Merge: efdecee 88f111f
+Author: Anthony Lu <anthony.lu1115@gmail.com>
+Date:   Mon Apr 12 15:08:16 2021 +1000
+
+    Merge pull request #3 from AnthonyALu/footer
+    
+    added git and linkedin to footer
+
+commit 88f111f699686e1dd077f73839c41ccf01ae8706
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Mon Apr 12 15:07:38 2021 +1000
+
+    added git and linkedin to footer
+
+commit efdeceeef41912c906b3dfeb59b12c0dd6d658c4
+Merge: 2dec413 cb405a8
+Author: Anthony Lu <anthony.lu1115@gmail.com>
+Date:   Mon Apr 12 14:02:31 2021 +1000
+
+    Merge pull request #2 from AnthonyALu/skills
+    
+    finished skills section
+
+commit cb405a854cd94f11941d142e450b89bf1d82b02a
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Mon Apr 12 14:01:34 2021 +1000
+
+    finished skills section
+
+commit 2dec413215eb3e7ff5697a13eb7e7e633e05b353
+Merge: 2edb93f 87ed19c
+Author: Anthony Lu <anthony.lu1115@gmail.com>
+Date:   Mon Apr 12 11:21:20 2021 +1000
+
+    Merge pull request #1 from AnthonyALu/aboutme
+    
+    finished about-me
+
+commit 87ed19c5c17e064a6a8cf75ef94a01fa779fc4ea
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Mon Apr 12 11:20:31 2021 +1000
+
+    finished about-me
+
+commit 2edb93f065f1a4db1378c7d5783a7679f890d79e
+Author: AnthonyALu <anthony.lu1115@gmail.com>
+Date:   Mon Apr 12 10:06:42 2021 +1000
+
+    initial commit
